@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ajax 分页器</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js" ></script>
+    <script type="text/javascript" src="js/req.js"></script>
+</head>
+<body>
+<div class="loading hide"><img src="images\loading.gif"/> </div>
+<div class="wrap">
+    <div class="user-head"><img src="images/user-head.png"/></div>
+    <div class="content">
+        <table class="ticket-list">
+        <thead>
+        <tr class="list-head">
+            <td>套票号</td>
+            <td>图片</td>
+            <td>销售金额(元)</td>
+            <td>销售时间</td>
+            <td>提交时间</td>
+        </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+        <div class="pages-info">
+            <div class="page-select"></div>
+            <span>共<span id="total-count"></span>条记录 <span id="page-index"></span>页</span>
+        </div>
+    </div>
+</div>
+<div class="over hide">
+    <div class="close-btn">
+        <div></div><div></div>
+    </div>
+    <div class="ticket-wrap">
+    </div>
+</div>
+<script type="text/javascript" src="js/main.js" ></script>
+</body>
+</html>
