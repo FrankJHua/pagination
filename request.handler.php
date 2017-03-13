@@ -5,7 +5,9 @@
  * Date: 2017/3/7
  */
     require_once ("connect.php");
-
+	
+	echo "xujiahua";
+	
     $pageSize = @$_POST["pagesize"];
     $pageIndex = @$_POST["pageindex"];
     $result = array();
@@ -17,8 +19,10 @@
         die();
     }
 
+	echo "xujiahua got post";
+	
     $res = null;    //资源标识符
-
+	
     //查询记录条数和总页数
     $sql = "select count(*) from tickets";
     $res = mysqli_query($conn,$sql);

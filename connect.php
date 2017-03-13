@@ -14,4 +14,6 @@ if(!mysqli_select_db($conn,DATABASE)){
     echo mysqli_error($conn);
 }
 mysqli_query($conn,"set names utf8");
+
+echo "xujiahua";
 ?>
